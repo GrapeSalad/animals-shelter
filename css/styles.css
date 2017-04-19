@@ -91,3 +91,29 @@ footer {
     background-color: teal;
   }
 }
+
+@keyframes bounce {
+  0% {background-color: #27B803; margin: 12px;}
+  50% {background-color: #BBB803; margin: 24px;}
+  100% {background-color: #27B803; margin: 12px;}
+}
+
+h2 {
+  background-color: #27B803;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shift {
+  0%   {top:-200px;}
+  50% {top:0px;}
+  100% {top:-200px;}
+}
+
+h1 {
+  position: relative;
+  animation-name: shift;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
