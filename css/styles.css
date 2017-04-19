@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 5px;
+  padding: 5px 5px 300px;
   background-color: #3480E8;
 }
 
@@ -36,10 +36,58 @@ h2 {
   padding: 3px;
   float: left;
   border: 1px solid green;
-  background: url("../img/grass-bg.jpeg") repeat;
+  background: url("../img/grass-bg.jpeg") no-repeat;
+  background-size: cover;
   background-blend-mode: lighten;
+}
+
+.bio .center a:link {
+  font-weight: bold;
+  color: #B2150C;
+  background-color: #EBFF19;
+  border-radius: 10px;
+  padding: 1px 3px;
+}
+
+.bio .center a:visited {
+  color: #1473CC;
+}
+
+.bio .center a:hover {
+  background-color: #CCB803;
+}
+
+.bio .center a:active {
+  border: 1px dotted red;
+}
+
+.center {
+  text-align: center;
+  padding-left: 55px;
 }
 
 .profile {
   font-style: italic;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(191, 179,141, 0.8);
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  body {
+    background-color: grey;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px){
+  body {
+    background-color: teal;
+  }
 }
